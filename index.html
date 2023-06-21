@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de games</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header-conteiner">
+        <div class="title-logo">
+            <div class="logo">
+                <img src="./img/controller-removebg-preview (1).png" alt="logo-principal">
+                <h1>Game <span>Shop</span></h1>
+            </div>
+            <div class="menu" onclick="onMenuButtonClick()" data-toggle="dropdown" data-target="#navbar">
+                <img src="./img/menu.png" alt="menu-icon">
+            </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <a href="">
+                    <li>Categorias</li>
+                </a>
+                <a href="">
+                    <li>Ofertas</li>
+                </a>
+                <a href="">
+                    <li>Vestuário</li>
+                </a>
+                <a href="">
+                    <li>Favoritos</li>
+                </a>
+                <div class="cart"> <a href=""><img src="./img/cart.png" alt="cart-icon"></a></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-conteiner">
+        <div class="banner">
+            <div class="banner-image">
+                <img src="./img/banner2.png" alt="">
+            </div>
+
+            <div class="banner-content">
+                <div class="banner-title">
+                    <h2><span>25%</span> de desconto em todos os jogos</h2>
+                </div>
+                <button class="banner-botao">
+                    <a href="">
+                        <h4>COMPRAR</h4>
+                    </a>
+                </button>
+            </div>
+
+        </div>
+        <section>
+            <div class="title-products">
+                <h2>PRODUTOS EM <span>DESTAQUE</span></h2>
+            </div>
+            <div class="products-conteiner">
+                <div class="game1">
+                    <img src="./img/capamiranha (1).png" alt="">
+                    <div class="text-game1">
+                        <p>
+                            R$320,00 <br>
+                            10x R$32,00 sem juros <br>
+                            <span>Envio grátis</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="game2">
+                    <img src="./img/godofwar.png" alt="">
+                    <div class="text-game2">
+                        <p>
+                            R$350,00 <br>
+                            10x R$35,00 sem juros <br>
+                            <span>Envio grátis</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="game3">
+
+                    <img src="./img/call-of-duty.png" alt="">
+                    <div class="text-game2">
+                        <p>
+                            R$298,00 <br>
+                            10x R$29,80 sem juros <br>
+                            <span>Envio grátis</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="categories-title">
+                <h2> Categorias <span> mais acessadas </span> esse mês</h2>
+            </div>
+            <div class="categories-conteiner">
+                <div class="gamechair">
+                    <img src="" alt="">
+                    <div class="gamechair-title">
+                        <h4>Cadeiras gamer</h4>
+                    </div>
+                </div>
+                <div class="computers">
+                    <img src="" alt="">
+                    <div class="computers-title">
+                        <h4>Computadores</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footer-conteiner">
+        <div class="footer-content">
+            <img src="./img/controller-removebg-preview (1).png" alt="logo-principal">
+            <h2>Game <span>Shop</span></h2>
+        </div>
+        <div class="github">
+            <a href="https://github.com/leonardovasconceloss" target="_blank">
+                <h4>Created by: /github.com/<span>leonardovasconceloss</span> </h4>
+            </a>
+        </div>
+        <div class="social-media">
+            <h2>Redes <span>Sociais</span></h2>
+            <a href=""><img src="./img/icons8-facebook-circled.svg" alt=""></a>
+            <a href=""><img src="./img/icons8-instagram.svg" alt=""></a>
+            <a href=""><img src="./img/icons8-twitter-circled.svg" alt=""></a>
+        </div>
+    </footer>
+
+    <script>
+        function onMenuButtonClick() {
+            const navbar = document.getElementById('navbar')
+            navbar.style.display = (navbar.style.display == 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
